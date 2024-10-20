@@ -2,7 +2,11 @@
 
 # repo link
 
+https://github.com/djanth22/week-8-assignment-repo
+
 # deployment link
+
+https://week-8-assignment-jet.vercel.app/
 
 # planning
 
