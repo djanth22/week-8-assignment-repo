@@ -4,12 +4,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  border: 10px, solid, rgba(241, 177, 0, 0.589);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #131313;
     --foreground: #ededed;
   }
 }
@@ -18,6 +19,115 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  color: gold;
+}
+
+.header {
+  width: 98vw;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+}
+
+.snake {
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+@media only screen and (max-width: 400px) {
+  .snake {
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+}
+
+.title,
+.sub-title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+  text-shadow: 0 0 10px #ffe341;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.nav {
+  background-color: gold;
+  color: red;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 20px;
+  text-align: center;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(124, 101, 0, 0.575);
+  border-radius: 30px;
+}
+
+#home-message,
+#new-post {
+  height: 80vh;
+}
+
+#new-post {
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input,
+textarea {
+  color: #0a0a0a;
+  padding: 5px;
+}
+
+input {
+  width: 30vw;
+}
+
+.post-comment {
+  width: 50vw;
+  height: 350px;
+}
+
+#del-button {
+  color: red;
+  display: flex;
+  background-color: rgb(51, 65, 80);
+  padding: 5px;
+}
+
+.footer {
+  background-color: #5e573c;
+  padding: 20px;
+  border: 3px, #e6b000, solid;
+  border-radius: 20px;
+}
+
+.footer-title {
+  background-color: #867b4c;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px #493200cb;
+}
+
+.contacts {
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @layer utilities {

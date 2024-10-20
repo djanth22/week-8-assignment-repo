@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- reflection -->
 
-## Getting Started
+# repo link
 
-First, run the development server:
+# deployment link
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# planning
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![wireframe](/public/planning.png)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# schema
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![schema](/public/schema.png)
 
-## Learn More
+## Required
 
-To learn more about Next.js, take a look at the following resources:
+- 🎯 What requirements did you achieve?
+- 🎯 Were there any requirements or goals that you were unable to achieve?
+- 🎯 If so, what was it that you found difficult about these tasks?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Optional
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 🏹 Feel free to add any other reflections you would like to share about your submission, for example:
 
-## Deploy on Vercel
+- Requesting feedback about a specific part of your submission.
+- What useful external sources helped you complete the assignment (e.g YouTube tutorials)?
+- What errors or bugs did you encounter while completing your assignment? How did you solve them?
+- What went really well and what could have gone better?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## my reflection
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+What requirements did I achieve?
+below are the assignment requirements
+
+# Requirements
+
+- 🎯 Display all posts on the page, with an option to sort them in ascending or descending order.
+- 🎯 Create a SQL schema for a posts table and a comments table, with the comments being connected to the posts table with a foreign key.
+  Please submit your database schema, as is mentioned in the submission instructions.
+- 🎯 Create a delete button on posts that allows users to delete the post from the database.
+- 🎯 Create a form which saves comments to a dedicated comments table, with the comments being connected to the posts table with a foreign key.
+- 🎯 Allow users to comment on individual posts in their dynamic routes. Comments should be associated with posts, and have a dynamic route (e.g. /posts/:postid).
+- 🎯 Add a redirect when a user creates a post to redirect them to the posts page.
+
+- I have managed to display all posts on my page and have implemented links to sort them into ascending and descending order
+- my SQL schema shows the posts and comments tables connected with a foreign key
+- my posts and my comments have a button for deleting them from the database
+- I have a form that saves comments to a dedicated comments table
+- users can comment on individual posts in thei dynamic routes
+- upon submitting the posts form it redirects from the new post page to the posts page
+
+# other stuff
+
+similarly to the last assignment I had a few issues wrapping my head around certain concepts, in this case the delete button for comments and posts. I knew I needed to nest a client component inside of a server component but getting it to work took me a lot of time. Rendering the button was the easy part, but making sure the logic was implemented in a way that achieved the delete query for the individual post was frustrating. but after my usual panic, google searches and faffing with it for a while (longer than I'd like to admit) finally i managed to get something that gave me the results I wanted.
+
+I'd also enjoy playing with this more after potentially looking into user authentication so that the user writing the post/comment is the only one who can delete their content.
